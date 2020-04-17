@@ -41,4 +41,8 @@ public class BubbleSort {
             array[j] = temp;
         }
     }
+
+    private void sortAscending(int[] array, int j) {
+
+    }
 }
