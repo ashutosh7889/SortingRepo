@@ -30,7 +30,7 @@ public class Main {
         switch (choice) {
             case 1: /*BUBBLE SORT*/
                 BubbleSort bubbleSort = new BubbleSort();
-                bubbleSort.sort(array, (int) Math.ceil(Math.random()));
+                bubbleSort.sort(array);
                 System.out.println("ARRAY SORTED BY BUBBLE SORT");
                 System.out.println(Arrays.toString(array));
                 break;
