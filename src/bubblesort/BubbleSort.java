@@ -26,4 +26,8 @@ public class BubbleSort {
             }
         }
     }
+
+    public void sortDescending(int[] array, int j) {
+
+    }
 }
