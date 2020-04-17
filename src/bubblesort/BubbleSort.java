@@ -14,7 +14,7 @@ public class BubbleSort {
      *
      * @param array the array to be sorted
      */
-    public void sort(int[] array) {
-
+    public void sort(int[] array, int choiceForSorting) {
+        System.out.println(choiceForSorting == 1 ? "DESCENDING ORDER SORT" : "ASCENDING ORDER SORT");
     }
 }
