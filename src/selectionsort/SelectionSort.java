@@ -16,10 +16,13 @@ public class SelectionSort {
                     posMin = next;
                 }
             }
+            swap(array, i, posMin);
         }
     }
 
     private void swap(int[] array, int fill, int posMin) {
         int temp = array[fill];
+        array[fill] = array[posMin];
+        array[posMin] = temp;
     }
 }
