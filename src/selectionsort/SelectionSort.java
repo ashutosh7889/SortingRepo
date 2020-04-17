@@ -11,6 +11,15 @@ public class SelectionSort {
     public void sort(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             int posMin = i;
+            for (int next = i + 1; next < array.length; next++) {
+                if (array[next] < array[posMin]) {
+                    posMin = next;
+                }
+            }
         }
+    }
+
+    private void swap(int[] array, int fill, int posMin) {
+
     }
 }
