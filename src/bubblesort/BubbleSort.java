@@ -42,9 +42,18 @@ public class BubbleSort {
         }
     }
 
+    /**
+     * This is a sortAscending method.
+     * This method sorting the element of the array in ascending order.
+     *
+     * @param array This is array of integer type.
+     * @param j     This is index of element which we have to check that smaller or bigger.
+     */
     private void sortAscending(int[] array, int j) {
         if (array[j] > array[j + 1]) {
-            int temp = array[j + 1];
+            int temp = array[j];
+            array[j] = array[j + 1];
+            array[j + 1] = temp;
         }
     }
 }
