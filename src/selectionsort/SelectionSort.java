@@ -20,6 +20,6 @@ public class SelectionSort {
     }
 
     private void swap(int[] array, int fill, int posMin) {
-
+        int temp = array[fill];
     }
 }
