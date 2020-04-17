@@ -43,6 +43,8 @@ public class BubbleSort {
     }
 
     private void sortAscending(int[] array, int j) {
-
+        if (array[j] > array[j + 1]) {
+            int temp = array[j + 1];
+        }
     }
 }
