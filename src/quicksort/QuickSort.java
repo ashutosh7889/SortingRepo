@@ -3,7 +3,9 @@ package quicksort;
 public class QuickSort {
     public static void sort(int array[], int leftIndex, int rightIndex) {
         if (leftIndex < rightIndex) {
-            int pivot = partition
+            int pivot = partition(array, leftIndex, rightIndex);
+            sort(array, leftIndex, pivot - 1);
+            sort(array, pivot + 1, rightIndex);
         }
     }
 
