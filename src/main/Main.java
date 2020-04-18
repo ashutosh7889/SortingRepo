@@ -42,7 +42,11 @@ public class Main {
                 System.out.println(Arrays.toString(array));
                 break;
             case 2: /*INSERTION SORT*/
-                InsertionSort insertionSort =
+                InsertionSort insertionSort = new InsertionSort();
+                insertionSort.sort(array);
+                System.out.println("ARRAY SORTED BY INSERTION SORT");
+                System.out.println(Arrays.toString(array));
+                break;
             default:
                 break;
         }
