@@ -51,7 +51,10 @@ public class Main {
                 break;
             case 4: /*QUICK SORT*/
                 QuickSort quickSort = new QuickSort();
-
+                QuickSort.sort(array);
+                System.out.println("ARRAY SORTED BY QUICK SORT");
+                System.out.println(Arrays.toString(array));
+                break;
             default:
                 break;
         }
