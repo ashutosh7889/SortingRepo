@@ -13,11 +13,17 @@ public class QuickSort {
         int partitionIndex = leftIndex;
         for (int i = leftIndex; i < rightIndex; i++) {
             if (array[i] <= pivot) {
-
+                swap(array, i, partitionIndex);
+                partitionIndex++;
             }
         }
+        swap(array, partitionIndex, rightIndex);
+        return partitionIndex;
     }
 
     private static void swap(int[] array, int i, int j) {
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 }
