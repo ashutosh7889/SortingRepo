@@ -8,6 +8,7 @@
 package main;
 
 import bubblesort.BubbleSort;
+import insertionsort.InsertionSort;
 import selectionsort.SelectionSort;
 
 import java.util.Arrays;
@@ -40,6 +41,8 @@ public class Main {
                 System.out.println("ARRAY SORTED BY SELECTION SORT");
                 System.out.println(Arrays.toString(array));
                 break;
+            case 2: /*INSERTION SORT*/
+                InsertionSort insertionSort =
             default:
                 break;
         }
