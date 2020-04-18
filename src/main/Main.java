@@ -44,7 +44,7 @@ public class Main {
                 break;
             case 3: /*INSERTION SORT*/
                 InsertionSort insertionSort = new InsertionSort();
-                insertionSort.sort(array);
+                InsertionSort.sort(array);
                 System.out.println("ARRAY SORTED BY INSERTION SORT");
                 System.out.println(Arrays.toString(array));
                 break;
