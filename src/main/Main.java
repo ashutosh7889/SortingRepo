@@ -27,6 +27,7 @@ public class Main {
         System.out.println(Arrays.toString(array));
         System.out.println("Press 1 to sort this array using Bubble Sort");
         System.out.println("Press 2 to sort this array using Selection Sort");
+        System.out.println("Press 3 to sort this array using Insertion Sort");
         int choice = scanner.nextInt();
         switch (choice) {
             case 1: /*BUBBLE SORT*/
@@ -41,7 +42,7 @@ public class Main {
                 System.out.println("ARRAY SORTED BY SELECTION SORT");
                 System.out.println(Arrays.toString(array));
                 break;
-            case 2: /*INSERTION SORT*/
+            case 3: /*INSERTION SORT*/
                 InsertionSort insertionSort = new InsertionSort();
                 insertionSort.sort(array);
                 System.out.println("ARRAY SORTED BY INSERTION SORT");
