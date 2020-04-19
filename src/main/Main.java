@@ -9,6 +9,7 @@ package main;
 
 import bubblesort.BubbleSort;
 import insertionsort.InsertionSort;
+import mergesort.MergeSort;
 import quicksort.QuickSort;
 import selectionsort.SelectionSort;
 
@@ -56,6 +57,8 @@ public class Main {
                 System.out.println("ARRAY SORTED BY QUICK SORT");
                 System.out.println(Arrays.toString(array));
                 break;
+            case 5:/*MERGE SORT*/
+                MergeSort mergeSort = new MergeSort();
             default:
                 break;
         }
