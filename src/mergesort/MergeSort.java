@@ -31,7 +31,7 @@ public class MergeSort {
             }
         }
         while (i < leftSubArray.length) {
-            outputArray[k++] = leftSubArray[k++];
+            outputArray[k++] = leftSubArray[i++];
         }
         while (j < rightSubArray.length) {
             outputArray[k++] = rightSubArray[j++];
