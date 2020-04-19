@@ -59,6 +59,9 @@ public class Main {
                 break;
             case 5:/*MERGE SORT*/
                 MergeSort mergeSort = new MergeSort();
+                MergeSort.sort(array);
+                System.out.println("ARRAY SORT BY MERGE SORT");
+                System.out.println(Arrays.toString(array));
             default:
                 break;
         }
