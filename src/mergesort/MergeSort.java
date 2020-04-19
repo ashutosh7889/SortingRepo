@@ -13,9 +13,28 @@ public class MergeSort {
 
             sort(leftArray);
             sort(rightArray);
+
+            merge(array, leftArray, rightArray);
         }
     }
 
     public static void merge(int[] outputArray, int[] leftSubArray, int[] rightSubArray) {
+        int i = 0;
+        int k = 0;
+        int j = 0;
+
+        while (i < leftSubArray.length && j < rightSubArray.length) {
+            if (leftSubArray[i] < rightSubArray[j]) {
+                outputArray[k++] = leftSubArray[i++];
+            } else {
+                outputArray[k++] = rightSubArray[j++];
+            }
+        }
+        while (i < leftSubArray.length) {
+            outputArray[k++] = leftSubArray[k++];
+        }
+        while (j < rightSubArray.length) {
+            outputArray[k++] = rightSubArray[j++];
+        }
     }
 }
